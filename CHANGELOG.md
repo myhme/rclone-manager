@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.4](https://github.com/iPromKnight/rclone-manager/compare/v1.2.3...v1.2.4) (2025-01-11)
+
+
+### ⌨️ Code Refactoring
+
+* env var for overriding rclone bin name ([b0f6785](https://github.com/iPromKnight/rclone-manager/commit/b0f6785d49fba49bbc786a1f92b40b5497332927))
+
+## [1.2.3](https://github.com/iPromKnight/rclone-manager/compare/v1.2.2...v1.2.3) (2025-01-11)
+
+
+### ⌨️ Code Refactoring
+
+* env vars for override of file locations ([c8a4e8d](https://github.com/iPromKnight/rclone-manager/commit/c8a4e8d413573a80edcb6f7aa3f8448879fc63e0))
+
 ## [1.2.2](https://github.com/iPromKnight/rclone-manager/compare/v1.2.1...v1.2.2) (2025-01-06)
 
 
