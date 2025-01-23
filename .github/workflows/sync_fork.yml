@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.3
         with:
-          owner: fscorrupt
-          repo: Posterizarr
+          owner: iPromKnight
+          repo: rclone-manager
           base: main
           head: main
           merge_method: merge
