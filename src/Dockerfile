@@ -25,4 +25,6 @@ RUN chmod +x /entrypoint.sh
 
 RUN echo "user_allow_other" >> /etc/fuse.conf
 
+USER ubuntu:ubuntu
+
 ENTRYPOINT ["/entrypoint.sh"]
