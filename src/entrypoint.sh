@@ -1,16 +1,16 @@
 #!/bin/sh
 
-PUID=${PUID:-1000}
-PGID=${PGID:-1000}
+PUID=${PUID:-1001}
+PGID=${PGID:-1001}
 
 if ! getent group customgroup >/dev/null 2>&1; then
-    addgroup -g "$PGID" rclonemanager
+    addgroup -g "$PGID" ubuntu
 fi
 
 if ! id -u rclonemanager >/dev/null 2>&1; then
-    adduser -u "$PUID" -G rclonemanager -D -s /bin/sh rclonemanager
+    adduser -u "$PUID" -G ubuntu -D -s /bin/sh ubuntu
 fi
 
-chown -R rclonemanager:rclonemanager /data
+chown -R ubuntu:ubuntu /data
 
-exec su-exec rclonemanager "/usr/local/bin/rclone-manager"
+exec su-exec ubuntu "/usr/local/bin/rclone-manager"
